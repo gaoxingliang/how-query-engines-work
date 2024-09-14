@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package io.andygrove.kquery.jdbc;
+package org.ballistacompute.jdbc;
+
+import org.junit.*;
+
+import java.sql.*;
 
 import static org.junit.Assert.*;
-
-import java.sql.SQLException;
-
-import org.junit.Test;
 
 /**
  * JDBC Driver unit tests.

@@ -12,25 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package io.andygrove.kquery.jdbc;
+package org.ballistacompute.jdbc;
+
+import com.google.common.collect.*;
+import org.junit.*;
+
+import java.sql.*;
+import java.util.*;
 
 import static org.junit.Assert.*;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-
-import org.junit.Ignore;
-import org.junit.Test;
-
-import com.google.common.collect.ImmutableList;
 
 /**
  * JDBC Driver unit tests.

@@ -3,7 +3,7 @@ import java.time.Instant
 plugins {
     java
     `java-library`
-    kotlin("jvm") version "1.3.50" apply false
+    kotlin("jvm") version "1.3.72" apply false
     `maven-publish`
 
     //TODO: this has to be uncommented when pushing a release to sonatype but commented out
@@ -21,6 +21,7 @@ version = "0.4.0-SNAPSHOT"
 allprojects {
     repositories {
         mavenLocal()
+        maven(url = "https://maven.aliyun.com/repository/public/")
         mavenCentral()
         jcenter()
     }

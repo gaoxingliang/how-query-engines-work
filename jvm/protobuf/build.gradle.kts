@@ -2,7 +2,7 @@ description = "Ballista protocol buffer format"
 
 plugins {
     java
-    id("com.google.protobuf") version "0.8.11"
+    id("com.google.protobuf") version "0.9.4"
     id("idea")
 }
 
@@ -27,6 +27,6 @@ dependencies {
 
     implementation("org.apache.arrow:arrow-memory:0.17.0")
     implementation("org.apache.arrow:arrow-vector:0.17.0")
-    implementation("com.google.protobuf:protobuf-java:3.11.4")
+    implementation("com.google.protobuf:protobuf-java:3.24.4")
     testImplementation("junit:junit:4.13")
 }
