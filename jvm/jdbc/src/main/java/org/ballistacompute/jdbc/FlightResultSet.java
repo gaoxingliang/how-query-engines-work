@@ -12,33 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package io.andygrove.kquery.jdbc;
+package org.ballistacompute.jdbc;
 
-import java.io.InputStream;
-import java.io.Reader;
-import java.math.BigDecimal;
-import java.net.URL;
-import java.sql.Array;
-import java.sql.Blob;
-import java.sql.Clob;
+import org.apache.arrow.flight.*;
+import org.apache.arrow.vector.*;
+
+import java.io.*;
+import java.math.*;
+import java.net.*;
 import java.sql.Date;
-import java.sql.NClob;
-import java.sql.Ref;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.RowId;
-import java.sql.SQLException;
-import java.sql.SQLFeatureNotSupportedException;
-import java.sql.SQLWarning;
-import java.sql.SQLXML;
-import java.sql.Statement;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.util.Calendar;
-import java.util.Map;
-
-import org.apache.arrow.flight.FlightStream;
-import org.apache.arrow.vector.VectorSchemaRoot;
+import java.sql.*;
+import java.util.*;
 
 /**
  * ResultSet.
